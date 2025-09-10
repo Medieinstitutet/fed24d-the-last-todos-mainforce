@@ -1,9 +1,11 @@
 # 📌 Rättningsrapport – fed24d-the-last-todos-mainforce
 
 ## 🎯 Uppgiftens Krav:
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Tfc19Mhg)
+
 # Inlämningsuppgift Todo
 
-I denna inlämningsuppgift kommer ni att skapa er egen todo-lista i en react-applikation.
+I denna inlämningsuppgift kommer ni att skapa er egen todo-lista.
 Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp på skärmen i form av en lista. När uppgiften är slutförd skall användaren kunna markera uppgiften som slutförd och uppgiften skall då tas bort från listan.
 
 ## Betyg G
@@ -11,17 +13,20 @@ Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp p
 - Skapa en hårdkodad lista med punkter att göra (hitta på egna punkter, dessa skall inte bara vara en text)
 - Presentera listan på skärmen, helst med lite kontroll. Detta betyder i en html-struktur t.ex. i en ul/li-lista
 - Implementera klickhändelse för att hantera borttagandet av en todo.
-- Todo markeras som klar/tas bort från skärmen och markeras som klar i javascript-listan.
+- Todo markeras som klar på skärmen och markeras som klar i javascript-listan.
+- Ni behöver använda localStorage så att listan inte börjar om från början varje gång sidan används.
+- Ni behöver använda er av en komponent.
+- Ni behöver använda er av state med en lista med objekt.
 
 ## Betyg VG
 
 - Alla punkter under G
 - Kunna visa även klara händelser och klicka tillbaka den så att de blir oklara igen.
 - Skapa ett formulär som tillåter att en användare skapar nya todos efterhand.
-- Använda lifting state up för att dela upp dina komponenter bättre.
 - Kunna sortera ordningen på dina todos.
-- Implementera ett valfritt grafiskt ramverk till din todolista, t.ex. material ui eller tailwind.
-- Egen css får gärna skrivas och då skall ni ha en bra struktur och använda flex eller grid på ett bra sätt.
+- Implementera ett valfritt grafiskt ramverk, t.ex. tailwind eller material ui.
+- Ni behöver ha minst tre komponenter.
+- Ni måste använda Lifting State Up.
 
 ## Allmänt
 
@@ -34,7 +39,7 @@ npm i
 och
 
 ```shell
-npm run dev 
+npm run dev
 ```
 
 för att köra projektet.
@@ -50,7 +55,7 @@ för att köra projektet.
 
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Koden uppfyller alla krav och flera kriterier för VG har implementerats. Studenten har implementerat en todo-lista med en hårdkodad lista med punkter och presenterar dessa i en välstrukturerad HTML. Användaren kan markera uppgifter som gjorda och dessa kan tas bort från listan. Det finns även möjlighet att återkalla färdiga uppgifter. Ett formulär tillåter användaren att lägga till nya todos. Lifting state up är välimplementerat mellan komponenterna och det finns möjlighet att sortera listan av todos. Tailwind CSS används på ett bra sätt vilket förbättrar det visuella utseendet. Koden är generellt välstrukturerad med bra hantering av tillstånd och interaktivitet.
+📌 **Motivering:** Koden uppfyller alla krav för VG-nivån. Det finns en hårdkodad lista, som presenteras på skärmen, och användare kan lägga till och ta bort todos. Det finns stöd för att återställa och spara tillståndet i localStorage, och flera komponenter har implementerats inklusive AddTodoButton, AddTodoForm, PriorityLabel, och Sorting. Lifting State Up används, och ett grafiskt ramverk som Tailwind CSS ingår. Todo-objekt kan sorteras och markeras som klara eller oklara igen.
 
 💡 **Förbättringsförslag:**  
-Koden kan förbättras ytterligare genom att säkerställa bättre enhetlig struktur och separation mellan presentation och logik, speciellt genom att separera css och komponent-logik mer noggrant. Man kan även förbättra tillgängligheten genom att lägga till ARIA-attribut och optimera för skärmläsare. Några små kodoptimeringar kan göras för att förbättra läsbarheten och prestandan, såsom att minimera användningen av inline-stilar genom att definiera dessa i CSS-filer när möjligt.
+Koden är generellt sett välstrukturerad och funktionell. För framtida förbättringar kan det vara värdefullt att lägga till testfall för att säkerställa att funktionaliteten fungerar korrekt vid ändringar. Det kan också vara bra att dokumentera komponenternas syfte och funktioner med kommentarer för att underlätta underhåll och vidareutveckling.
